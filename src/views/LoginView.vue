@@ -1,15 +1,15 @@
 <template>
-  <booking-login />
+  <login-view /><!-- 小文字にする必要がある？ -->
 </template>
 
 <script>
-  import BookingLogin from '../components/BookingLogin'
+  import LoginView from '../components/Login.vue'
 
   export default {
     name: 'Login',
 
     components: {
-      BookingLogin,
+      LoginView, // 2つ以上の単語にする必要がある？キャメルケース？
     },
   }
 </script>
