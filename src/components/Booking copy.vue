@@ -103,6 +103,11 @@
                       :value="card.title"
                     ></v-checkbox>
 
+                      <!-- <v-checkbox
+          v-model="allowSpaces"
+        ></v-checkbox> -->
+
+        <!-- <v-spacer></v-spacer> -->
 
         <v-select
         v-model="selectTime"
@@ -130,6 +135,49 @@
           required
         ></v-select>
 
+<!--
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-icon
+              color="rgba(0, 0, 0, 0.6)"
+              dark
+              v-bind="attrs"
+              v-on="on"
+            >
+            mdi-account-supervisor
+            </v-icon>
+          </template>
+          <span>最大4名</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-icon
+              color="rgba(0, 0, 0, 0.6)"
+              dark
+              v-bind="attrs"
+              v-on="on"
+            >
+            mdi-weather-partly-rainy
+            </v-icon>
+          </template>
+          <span>雨天利用可</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-icon
+              color="rgba(0, 0, 0, 0.6)"
+              dark
+              v-bind="attrs"
+              v-on="on"
+            >
+            mdi-calendar-check
+            </v-icon>
+          </template>
+          <span>要予約</span>
+        </v-tooltip>
+      -->
                     </v-card-actions>
       
                   </v-card>
@@ -137,6 +185,30 @@
               </v-row>
             </v-container>
 
+            <!-- <v-card-actions>
+              <v-form
+        ref="form"
+        v-model="valid"
+        lazy-validation
+      >
+      <v-select
+          v-model="selectArea"
+          :items="areas"
+          :rules="[v => !!v || '選択してください']"
+          label="ご利用施設"
+          required
+        ></v-select>
+
+        <v-select
+          v-model="selectTime"
+          :items="items"
+          :rules="[v => !!v || '選択してください']"
+          label="ご希望時間"
+          required
+        ></v-select>
+
+      </v-form>
+            </v-card-actions> -->
           </v-card>
         </v-col>
 
