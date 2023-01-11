@@ -51,7 +51,7 @@
           <v-card>
             <!-- タイトル -->
             <v-card-title class="text-h5">
-              ご希望日の選択<span class="vnumgf" id="i29" aria-label="必須の質問"> *</span>
+              ご希望日の選択<span class="required" id="i29" aria-label="必須の質問"> *</span>
             </v-card-title>
             <!-- サブタイトル -->
             <v-card-subtitle>ご希望の日を選択してください</v-card-subtitle>
@@ -151,7 +151,7 @@
           <v-card>
             <!-- タイトル -->
             <v-card-title class="text-h5">
-              お客様情報入力<span class="vnumgf" id="i29" aria-label="必須の質問"> *</span>
+              お客様情報入力<span class="required" id="i29" aria-label="必須の質問"> *</span>
             </v-card-title>
             <!-- サブタイトル -->
             <v-card-subtitle>お客様情報入力してください</v-card-subtitle>
